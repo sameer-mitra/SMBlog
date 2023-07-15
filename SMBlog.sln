@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMBlog.Web", "SMBlog.Web\SMBlog.Web.csproj", "{AA2EBF50-27A5-43E7-B38F-4EF83A308069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMBlog.Web", "SMBlog.Web\SMBlog.Web.csproj", "{AA2EBF50-27A5-43E7-B38F-4EF83A308069}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMBlog.Models", "SMBlog.Models\SMBlog.Models.csproj", "{2E0D06FD-ED16-4B86-9B1A-8494BD946AED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A77BDE64-1440-4638-AA9D-2E9BF898945C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,10 @@ Global
 		{AA2EBF50-27A5-43E7-B38F-4EF83A308069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2EBF50-27A5-43E7-B38F-4EF83A308069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2EBF50-27A5-43E7-B38F-4EF83A308069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0D06FD-ED16-4B86-9B1A-8494BD946AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0D06FD-ED16-4B86-9B1A-8494BD946AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0D06FD-ED16-4B86-9B1A-8494BD946AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0D06FD-ED16-4B86-9B1A-8494BD946AED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
