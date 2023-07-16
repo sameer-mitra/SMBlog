@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SMBlog.Models.Account
 {
-    internal class ApplicationUserIdentity
+    public class ApplicationUserIdentity
     {
         public int ApplicationUserId { get; set; }
         public string Username { get; set; }
