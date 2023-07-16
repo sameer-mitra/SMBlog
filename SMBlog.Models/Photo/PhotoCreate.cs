@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SMBlog.Models.Photo
 {
-    internal class PhotoCreate
+    public class PhotoCreate
     {
         public string ImageUrl { get; set; }
         public string PublicId   { get; set; }
