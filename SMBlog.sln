@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMBlog.Repository", "SMBlog.Repository\SMBlog.Repository.csproj", "{C7FA5FC3-BAE8-48C8-A64F-71215C23313C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMBlog.Repository", "SMBlog.Repository\SMBlog.Repository.csproj", "{C7FA5FC3-BAE8-48C8-A64F-71215C23313C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMBlog.Identity", "SMBlog.Identity\SMBlog.Identity.csproj", "{652EA4AC-AB25-4F3A-BCB8-68CFB6B359AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{C7FA5FC3-BAE8-48C8-A64F-71215C23313C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7FA5FC3-BAE8-48C8-A64F-71215C23313C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7FA5FC3-BAE8-48C8-A64F-71215C23313C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652EA4AC-AB25-4F3A-BCB8-68CFB6B359AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652EA4AC-AB25-4F3A-BCB8-68CFB6B359AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652EA4AC-AB25-4F3A-BCB8-68CFB6B359AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652EA4AC-AB25-4F3A-BCB8-68CFB6B359AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

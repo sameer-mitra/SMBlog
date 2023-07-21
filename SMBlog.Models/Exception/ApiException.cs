@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace SMBlog.Models.Exception
 {
-    internal class ApiException
+    public class ApiException
     {
         public int StatusCode { get; set; }
         public DateTime PublishDate { get; set; }
