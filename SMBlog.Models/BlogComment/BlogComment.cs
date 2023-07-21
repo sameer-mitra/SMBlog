@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SMBlog.Models.BlogComment
 {
-    internal class BlogComment: BlogCommentCreate
+    public class BlogComment: BlogCommentCreate
 
     {
         public string Username { get; set; }

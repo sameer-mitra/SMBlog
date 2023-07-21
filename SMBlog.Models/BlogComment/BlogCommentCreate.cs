@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SMBlog.Models.BlogComment
 {
-    internal class BlogCommentCreate
+    public class BlogCommentCreate
     {
         public int BlogCommentId { get; set; }
         public int? ParentBlogCommentId { get; set; }
