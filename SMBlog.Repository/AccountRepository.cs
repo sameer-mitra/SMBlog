@@ -34,11 +34,11 @@ namespace SMBlog.Repository
             dataTable.Columns.Add("Fullname", typeof(string));
             dataTable.Columns.Add("PasswordHash", typeof(string));
 
-            dataTable.Rows.Add(user.Username,
+            dataTable.Rows.Add(user.UserName,
                 user.NormalizedUsername,
                 user.Email,
                 user.NormalizedEmail,
-                user.Fullname,
+                user.FullName,
                 user.PasswordHash);
 
             using(var connection=new SqlConnection(_config.GetConnectionString("DefaultConnection")))

@@ -59,7 +59,7 @@ namespace SMBlog.Identity
 
         public Task<string?> GetUserNameAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
         {
-            return Task.FromResult<string?>(user.Username);
+            return Task.FromResult<string?>(user.UserName);
         }
 
         public Task<bool> HasPasswordAsync(ApplicationUserIdentity user, CancellationToken cancellationToken)
@@ -98,7 +98,7 @@ namespace SMBlog.Identity
 
         public Task SetUserNameAsync(ApplicationUserIdentity user, string? userName, CancellationToken cancellationToken)
         {
-            user.Username = userName;
+            user.UserName = userName;
             return Task.FromResult(0);
         }
 

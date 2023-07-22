@@ -27,7 +27,7 @@ namespace SMBlog.Services
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.NameId, user.ApplicationUserId.ToString()),
-                new Claim(JwtRegisteredClaimNames.UniqueName, user.Username)
+                new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName)
             };
 
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SMBlog.Models.Account
 {
-    internal class ApplicationUserCreate : ApplicationUserLogin
+    public class ApplicationUserCreate : ApplicationUserLogin
     {
         [MinLength(10, ErrorMessage = "Must be 10-30 characters.")]
         [MaxLength(30, ErrorMessage = "Must be 10-30 characters.")]
-        public string Fullname { get; set; }
+        public string FullName { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
         [MaxLength(30, ErrorMessage = "Must be at most 30 characters.")]
