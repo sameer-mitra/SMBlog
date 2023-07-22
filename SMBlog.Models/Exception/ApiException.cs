@@ -11,6 +11,7 @@ namespace SMBlog.Models.Exception
     public class ApiException
     {
         public int StatusCode { get; set; }
+        public string Message { get; set; }
         public DateTime PublishDate { get; set; }
 
         public override string ToString()
