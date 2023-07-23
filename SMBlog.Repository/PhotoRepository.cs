@@ -82,7 +82,9 @@ namespace SMBlog.Repository
             {
                 await connection.OpenAsync();
                 newPhotoId = await connection.ExecuteScalarAsync<int>("Photo_Insert",
-                    new { Photo = dataTable.AsTableValuedParameter("dbo.PhotoType") }, commandType: CommandType.StoredProcedure);
+                    new { Photo = dataTable.AsTableValuedParameter("dbo.PhotoType"),
+                    ApplicationUserId = applicationUserId }, 
+                    commandType: CommandType.StoredProcedure);
             }
             Photo photo = await GetAsync(newPhotoId);
             return photo;
