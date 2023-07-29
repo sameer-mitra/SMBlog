@@ -48,7 +48,7 @@ namespace SMBlog.Web.Controllers
             return Ok(blogs);
         }
 
-        [HttpGet]
+        [HttpGet("{blogId}")]
         public async Task<ActionResult<Blog>> Get(int blogId)
         {
             var blog = await _blogRepository.GetAsync(blogId);
