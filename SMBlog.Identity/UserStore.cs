@@ -121,10 +121,9 @@ namespace SMBlog.Identity
         {
             throw new NotImplementedException();
         }
-
         public void Dispose()
         {
-            throw new NotImplementedException();
+            // Nothing to dispose
         }
     }
 }
