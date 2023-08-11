@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "SMBlog-UI"
+  "defaultProject": "SMBlog-UI",
+  "cli": {
+    "analytics": "a8cb3287-85c9-42a0-91ed-2708c673b867"
+  }
 }
