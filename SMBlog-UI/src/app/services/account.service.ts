@@ -48,16 +48,26 @@ export class AccountService {
       )
     }
 
-    setCurrentUser(user: ApplicationUser){
+    setCurrentUser(user: ApplicationUser) {
       this.currentUserSubject$.next(user);
     }
-
-    public get currentUserValue():ApplicationUser{
+  
+    public get currentUserValue(): ApplicationUser {
       return this.currentUserSubject$.value;
     }
-
-    logout(){
-      localStorage.removeItem('SMBlog-currentUser');
+  
+    public givenUserIsLoggedIn(username: string) {
+      return this.isLoggedIn() && this.currentUserValue.userName === username;
+    }
+  
+    public isLoggedIn() {
+      const currentUser = this.currentUserValue;
+      const isLoggedIn = !!currentUser && !!currentUser.token;
+      return isLoggedIn;
+    }
+  
+    logout() {
+      localStorage.removeItem('blogLab-currentUser');
       this.currentUserSubject$.next(null);
     }
 

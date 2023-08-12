@@ -23,6 +23,8 @@ import { RegisterComponent } from './components/register/register.component';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { ErrorInterceptor } from './interceptors/error.interceptor';
+import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { CollapseModule} from 'ngx-bootstrap/collapse';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { ErrorInterceptor } from './interceptors/error.interceptor';
     HttpClientModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
-    })
+    }),
+    CollapseModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: 
   [

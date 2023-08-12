@@ -66,7 +66,7 @@ export class ErrorInterceptor implements HttpInterceptor {
       console.log(error.error);
     } 
     else if (!!error.error){
-      let errorMessage = ((typeof error.error) == 'string')
+      let errorMessage = ((typeof error.error) === 'string')
       ? error.error
       : 'There is a validation error.';
       this.toastr.error(errorMessage, error.statusCode);
