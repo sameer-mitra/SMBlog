@@ -29,6 +29,7 @@
                 <div class="mb-3">
                     <input
                         type="password"
+                        autocomplete="on"
                         [ngClass]="{'is-invalid' : hasErrors('password') && isTouched('password'),
                                     'is-valid' : !hasErrors('password') && isTouched('password')}"
                         class="form-control form-control-lg"

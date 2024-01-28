@@ -12,13 +12,14 @@ import { AccountService } from 'src/app/services/account.service';
 export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
-  
+
   constructor(
     private accountService: AccountService,
     private router: Router,
     private formBuilder: FormBuilder
   ) { 
-    if(this.accountService.isLoggedIn){
+
+    if (this.accountService.isLoggedIn()) {
       this.router.navigate(['/dashboard']);
     }
   }
@@ -60,5 +61,4 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/dashboard']);
     });
   }
-
 }
